@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <% if (req.isAuthenticated()) { %>
+    <a href="/logout">Logout</a>
+  <% } else { %>
+    <a href="/auth/google">Login with Google</a>
+  <% } %>
+  
+  
+</body>
+</html>
